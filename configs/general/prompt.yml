@@ -6,7 +6,6 @@ prompts:
       Company policy for user messages to the General Knowledge AI:
       1. Content Safety:
          - Should not contain harmful data
-         - Should not contain explicit content
          - Should not promote or glorify violence
          - Should not contain malware, phishing attempts, or spam
 
@@ -27,8 +26,6 @@ prompts:
 
       5. General Knowledge-Specific Guidelines:
          - Should not ask for information on how to conduct illegal activities
-         - Should not request the AI to engage in copyright infringement
-         - Should respect intellectual property rights in questions and discussions
 
       User message: "{{ user_input }}"
 
