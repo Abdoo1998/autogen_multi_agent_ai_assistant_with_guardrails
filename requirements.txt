@@ -1,0 +1,15 @@
+fastapi 
+langchain-community
+langchain-core
+langchain-openai
+uvicorn
+fitz
+asyncio
+python-multipart
+pypdf
+chromadb
+streamlit
+nemoguardrails
+autogen
+
+
