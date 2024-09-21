@@ -44,6 +44,7 @@ streamlit run app.py
 ```
 
 ## Project Structure
+```bash
 ├── agents/
 │   ├── legal_agent.py  # Handles legal queries
 │   ├── financial_agent.py  # Handles financial queries
@@ -57,7 +58,7 @@ streamlit run app.py
 ├── main.py  # Main Streamlit app
 ├── requirements.txt  # List of dependencies
 └── README.md  # This file
-
+```
 # How to Use
 
 	1.	Type your question in the chat input box.
