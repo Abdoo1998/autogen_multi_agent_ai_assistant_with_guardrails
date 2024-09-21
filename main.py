@@ -6,7 +6,9 @@ from agents import LegalAgent, FinancialAgent, GeneralKnowledgeAgent, Orchestrat
 from utils import get_llm
 from configs import initialize_rails
 import nest_asyncio
+
 nest_asyncio.apply()
+
 # Set page config at the top of the script
 st.set_page_config(page_title="AutoGen Multi-Agent AI Assistant With guardrails ", page_icon="🤖", layout="wide")
 
@@ -65,8 +67,12 @@ if prompt := st.chat_input("What would you like to ask?"):
                     agent_name = "Orchestrator"
                     assistant_response = "I'm not sure how to categorize this question. Could you please provide more context or rephrase it?"
 
-                # Extract and display only the 'content' part of the response
-                response_text = assistant_response.get('content', 'Sorry, no response found.')  # Extract 'content' key
+                # Extract the content, handling both string and dictionary responses
+                if isinstance(assistant_response, dict):
+                    response_text = assistant_response.get('content', 'Sorry, no response found.')
+                else:
+                    response_text = assistant_response
+
                 st.markdown(response_text)
                 st.caption(f"Responded by: {agent_name} Agent")
 
