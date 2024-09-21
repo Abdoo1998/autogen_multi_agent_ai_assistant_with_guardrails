@@ -10,7 +10,7 @@ import nest_asyncio
 nest_asyncio.apply()
 
 # Set page config at the top of the script
-st.set_page_config(page_title="AutoGen Multi-Agent AI Assistant With guardrails ", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="EXLNemoGDemoBot ", page_icon="🤖", layout="wide")
 
 # Initialize components
 llm = get_llm()

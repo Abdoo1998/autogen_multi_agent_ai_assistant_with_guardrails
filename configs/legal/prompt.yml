@@ -24,9 +24,6 @@ prompts:
          - Should not contain garbled language
          - Should not spread misinformation about laws or legal processes
 
-      5. Legal-Specific Guidelines:
-         - Should not ask for specific legal advice (the AI can only provide general legal information)
-
 
       User message: "{{ user_input }}"
 
