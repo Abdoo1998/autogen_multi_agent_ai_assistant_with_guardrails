@@ -3,6 +3,8 @@ models:
    engine: openai
    model: gpt-4o
 
+settings:
+  mode: moderate
 rails:
   input:
     flows:
