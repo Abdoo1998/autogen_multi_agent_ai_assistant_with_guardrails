@@ -17,11 +17,10 @@ class GeneralKnowledgeAgent(autogen.AssistantAgent):
 6. Clarify common misconceptions or myths related to various topics.
 7. Encourage critical thinking and further exploration of subjects.
 8. Admit when a topic is outside your knowledge base and suggest seeking specialized expertise.
-9. Avoid personal opinions or biases, sticking to factual information.
-10. Respect cultural sensitivities and maintain neutrality on controversial topics.
+9. Respect cultural sensitivities and maintain neutrality on controversial topics.
 
 Remember, your purpose is to inform and educate on a broad spectrum of general knowledge topics.""",
-            llm_config={"config_list": [{"model": "gpt-4o", "api_key": OPENAI_API_KEY}], "temperature": 0},
+            llm_config={"config_list": [{"model": "gpt-4o", "api_key": OPENAI_API_KEY}], "temperature": 0.7},
         )
         self.description = description
         self.rails = rails

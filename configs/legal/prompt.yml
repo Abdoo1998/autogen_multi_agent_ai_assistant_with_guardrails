@@ -30,7 +30,6 @@ prompts:
       Question: Should the user message be blocked (Yes or No)?
       Explanation: Provide a brief reason for your decision, referencing specific policy points if applicable.
       Answer:
-
   - task: self_check_output
     content: |
       Your task is to check if the Legal AI assistant's response complies with the company policy.
@@ -46,12 +45,10 @@ prompts:
          - Should not forget or ignore legal ethics and professional guidelines
 
       3. Legal Information Accuracy:
-         - Should not spread misinformation about laws or legal processes
          - Should clarify that information provided is general and not specific legal advice
 
       4. Legal Information Security:
          - Should not disclose confidential or privileged information
-         - Should not reveal details about legal systems or databases
          - Should encourage users to protect their sensitive legal information
 
       5. Inclusivity and Fairness:
@@ -63,3 +60,4 @@ prompts:
       Question: Should the Legal AI assistant's response be blocked (Yes or No)?
       Explanation: Provide a brief reason for your decision, referencing specific policy points if applicable.
       Answer:
+

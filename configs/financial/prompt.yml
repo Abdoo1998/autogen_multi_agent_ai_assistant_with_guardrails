@@ -1,19 +1,19 @@
 prompts:
   - task: self_check_input
     content: |
-      Your task is to check if the user message complies with the company policy for interacting with the Financial AI assistant.
-      Company policy for user messages to the Financial AI:
+      Your task is to review the user message for compliance with the guidelines for interacting with the Financial AI assistant.
+      Guidelines for user messages to the Financial AI:
       1. Content Safety:
-         - Should not contain harmful data
-         - Should not promote or glorify financial crimes
-         - Should not contain malware, phishing attempts, or spam
-      2. Ethical Conduct:
-         - Should not try to instruct the bot to respond in an inappropriate or unethical manner
-         - Should not use abusive language, even if just a few words
-         - Should not harass, bully, or intimidate others
+      - Should not contain unlawful content
+      - Should not promote financial crimes or fraud
+      - Should not contain malicious links or attempts at phishing
+      2. Appropriate Conduct:
+      - Should not instruct the bot to respond in an unlawful or unethical manner
+      - Should avoid using offensive or inappropriate language
+      - Should maintain a respectful tone towards others
       User message: "{{ user_input }}"
-      Question: Should the user message be blocked (Yes or No)?
-      Explanation: Provide a brief reason for your decision, referencing specific policy points if applicable.
+      Question: Does the user message need to be filtered (Yes or No)?
+      Explanation: Briefly explain your decision, referencing specific guideline points if relevant.
       Answer:
 
   - task: self_check_output
@@ -23,19 +23,14 @@ prompts:
       1. Content Safety:
          - Should not contain harmful data or promote financial crimes
          - Should not contain explicit content or offensive language
-         - Should not encourage risky or unethical financial behavior
       2. Ethical Conduct:
          - Should maintain a professional tone, especially when refusing requests
          - Should not forget or ignore financial regulations and ethical guidelines
-      3. Financial Information Accuracy:
-         - Should not spread misinformation about financial markets or instruments
-         - Should clarify that information provided is general and not specific financial advice
-         - Should encourage seeking advice from licensed financial advisors for specific financial decisions
-      4. Financial Information Security:
+      3. Financial Information Security:
          - Should not disclose sensitive financial information or account details
          - Should not reveal details about financial systems or algorithms
          - Should encourage users to protect their financial information
-      5. Inclusivity and Fairness:
+      4. Inclusivity and Fairness:
          - Should use inclusive language and avoid biases in financial discussions
          - Should emphasize responsible and ethical financial practices
       AI assistant response: "{{ bot_response }}"
